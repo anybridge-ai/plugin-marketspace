@@ -16,4 +16,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## What's a plugin?
 
-A plugin extends Anybridge CLI with new tools, slash commands, themes, hooks, or MCP servers. See the [Anybridge plugin authoring docs](https://github.com/anybridge-ai/coding-agent/blob/dev/docs/plugins/authoring.md).
+A plugin extends Anybridge CLI with new tools, slash commands, themes, hooks, or MCP servers. Plugin authors write packages against the `@anybridge-ai/plugin` SDK and submit them here via the steps in [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+For now, plugin authoring guidance ships with the Anybridge CLI itself — run `anybridge plugin --help` or open the `/plugins` browser inside the TUI. A dedicated public authoring guide will land alongside the first beta release.

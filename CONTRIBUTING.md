@@ -4,7 +4,7 @@ Welcome — this guide is for plugin authors who want their plugin listed in the
 
 ## Steps
 
-1. **Write your plugin** against the `@anybridge-ai/plugin` SDK. See [authoring docs](https://github.com/anybridge-ai/coding-agent/blob/dev/docs/plugins/authoring.md).
+1. **Write your plugin** against the `@anybridge-ai/plugin` SDK. The SDK exports types and helpers for defining tools, hooks, slash commands, MCP servers, and TUI surfaces. The SDK ships bundled with the Anybridge CLI binary; a dedicated public authoring guide and standalone npm distribution will land alongside the first beta release.
 2. **Publish your plugin** to **npm** (recommended) or **GitHub** (any public repo with a valid `package.json` at root).
 3. **Fork this repo**, edit `marketplace.json`, add an entry to the `plugins` array:
 
