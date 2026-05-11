@@ -76,10 +76,10 @@
       },
       "userConfig": {
         "KUBECONFIG": {
-          "type": "string",
+          "type": "file",
           "sensitive": false,
-          "required": false,
-          "description": "Path to kubeconfig file. Leave blank to use ~/.kube/config. Example: /home/you/.kube/config"
+          "required": true,
+          "description": "Path to kubeconfig file (must exist on disk). Typical value: /home/<you>/.kube/config"
         }
       }
     }
