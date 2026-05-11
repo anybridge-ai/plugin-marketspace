@@ -6,5 +6,18 @@
     "email": "team@anybridge.ai",
     "url": "https://anybridge.ai"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "hello",
+      "source": "github:anybridge-ai/anybridge-hello",
+      "version": "0.1.0",
+      "description": "Toy plugin for testing the marketplace pipeline (greets you)",
+      "author": "Anybridge AI",
+      "license": "MIT",
+      "homepage": "https://github.com/anybridge-ai/anybridge-hello",
+      "keywords": ["toy", "test", "hello"],
+      "category": "Other",
+      "official": true
+    }
+  ]
 }
