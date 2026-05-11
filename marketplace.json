@@ -55,6 +55,23 @@
       }
     },
     {
+      "name": "superpowers",
+      "source": "skills",
+      "version": "5.1.0",
+      "description": "14 composable workflow skills (TDD, systematic debugging, brainstorming, writing/executing plans, subagent-driven development, git worktrees, code review) plus a session-start bootstrap. No MCP servers — installs a skill tree that the agent auto-loads on relevant tasks.",
+      "author": "Jesse Vincent (obra)",
+      "license": "MIT",
+      "homepage": "https://github.com/obra/superpowers",
+      "keywords": ["skills", "workflow", "tdd", "debugging", "planning", "subagents"],
+      "category": "Workflow",
+      "official": false,
+      "skillsRepo": {
+        "url": "https://github.com/obra/superpowers.git",
+        "ref": "v5.1.0",
+        "subdir": "skills"
+      }
+    },
+    {
       "name": "kubectl",
       "source": "inline",
       "version": "0.0.62",
