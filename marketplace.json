@@ -1,0 +1,10 @@
+{
+  "name": "anybridge",
+  "description": "Official Anybridge AI plugin marketplace",
+  "owner": {
+    "name": "Anybridge AI",
+    "email": "team@anybridge.ai",
+    "url": "https://anybridge.ai"
+  },
+  "plugins": []
+}
