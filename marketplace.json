@@ -53,6 +53,35 @@
           "args": ["-y", "@modelcontextprotocol/server-memory"]
         }
       }
+    },
+    {
+      "name": "kubectl",
+      "source": "inline",
+      "version": "0.0.62",
+      "description": "Kubernetes cluster access via the containers/kubernetes-mcp-server — list/inspect/apply resources, view logs, run pods. Native Go client (no kubectl binary required in PATH). Uses your existing kubeconfig.",
+      "author": "containers org (server) + Anybridge AI (catalog entry)",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/containers/kubernetes-mcp-server",
+      "keywords": ["kubernetes", "k8s", "kubectl", "devops", "infra"],
+      "category": "DevOps",
+      "official": true,
+      "mcpServers": {
+        "kubectl": {
+          "command": "npx",
+          "args": ["-y", "kubernetes-mcp-server@latest"],
+          "env": {
+            "KUBECONFIG": "${user_config.KUBECONFIG}"
+          }
+        }
+      },
+      "userConfig": {
+        "KUBECONFIG": {
+          "type": "string",
+          "sensitive": false,
+          "required": false,
+          "description": "Path to kubeconfig file. Leave blank to use ~/.kube/config. Example: /home/you/.kube/config"
+        }
+      }
     }
   ]
 }
