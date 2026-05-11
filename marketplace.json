@@ -18,6 +18,53 @@
       "keywords": ["toy", "test", "hello"],
       "category": "Other",
       "official": true
+    },
+    {
+      "name": "github",
+      "source": "inline",
+      "version": "2025.4.8",
+      "description": "GitHub integration via the official MCP server — search repos / issues / PRs, read files, list commits. Requires a GitHub Personal Access Token.",
+      "author": "Anthropic (MCP) + Anybridge AI (catalog entry)",
+      "license": "MIT",
+      "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "keywords": ["github", "git", "code-search", "issues", "pr", "productivity"],
+      "category": "Productivity",
+      "official": true,
+      "mcpServers": {
+        "github": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-github"],
+          "env": {
+            "GITHUB_PERSONAL_ACCESS_TOKEN": "${user_config.GITHUB_TOKEN}"
+          }
+        }
+      },
+      "userConfig": {
+        "GITHUB_TOKEN": {
+          "type": "string",
+          "sensitive": true,
+          "required": true,
+          "description": "GitHub Personal Access Token (PAT) — needs read access to whatever you want the agent to see. Create one at https://github.com/settings/tokens"
+        }
+      }
+    },
+    {
+      "name": "memory",
+      "source": "inline",
+      "version": "2026.1.26",
+      "description": "Persistent knowledge graph for the agent — stores entities, relations, and observations across sessions via the official MCP memory server. No external auth required.",
+      "author": "Anthropic (MCP) + Anybridge AI (catalog entry)",
+      "license": "MIT",
+      "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "keywords": ["memory", "knowledge-graph", "persistence", "productivity"],
+      "category": "Productivity",
+      "official": true,
+      "mcpServers": {
+        "memory": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-memory"]
+        }
+      }
     }
   ]
 }
