@@ -72,6 +72,23 @@
       }
     },
     {
+      "name": "huggingface",
+      "source": "skills",
+      "version": "2026.5.12",
+      "description": "14 Hugging Face skills covering model discovery (huggingface-best, hf-cli), local & remote inference (huggingface-local-models, transformers-js), fine-tuning workflows (huggingface-llm-trainer, huggingface-vision-trainer, train-sentence-transformers), datasets, paper search/publishing, Gradio apps, evals, and experiment tracking via Trackio. Pure skill tree — no MCP servers — follows the standardized Agent Skills format.",
+      "author": "Hugging Face",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/huggingface/skills",
+      "keywords": ["huggingface", "ml", "ai", "training", "fine-tuning", "inference", "datasets", "models", "papers"],
+      "category": "ML",
+      "official": false,
+      "skillsRepo": {
+        "url": "https://github.com/huggingface/skills.git",
+        "ref": "35810a6dbe518a0f7bd99b1e6550cb57b266ff0b",
+        "subdir": "skills"
+      }
+    },
+    {
       "name": "kubectl",
       "source": "inline",
       "version": "0.0.62",
